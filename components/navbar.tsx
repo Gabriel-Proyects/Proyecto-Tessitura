@@ -8,12 +8,8 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/Proyecto-Tessitura"
-
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
+    const handleScroll = () => setIsScrolled(window.scrollY > 50)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -27,9 +23,9 @@ export default function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
         <div className="flex items-center justify-between gap-4 lg:gap-8">
           {/* Logo */}
-          <Link href={`${basePath}/`} className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
+          <Link href="/" className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
             <Image
-              src={`${basePath}/tessitura.jpeg`}
+              src="/tessitura.jpeg"
               alt="Logo de Tessitura Arquitectos"
               width={40}
               height={40}
@@ -50,12 +46,12 @@ export default function Navbar() {
                 { href: "/#servicios", label: "Servicios" },
                 { href: "/#proyectos", label: "Proyectos" },
                 { href: "/#contacto", label: "Contacto" },
-                { href: "/#galeria", label: "Galería" },
-                { href: "/#redes-sociales", label: "Redes" },
+                { href: "/galeria", label: "Galería" },
+                { href: "/redes-sociales", label: "Redes" },
               ].map((link, i) => (
                 <li key={i}>
                   <Link
-                    href={`${basePath}${link.href}`}
+                    href={link.href}
                     className="text-sm lg:text-base text-gray-700 hover:text-black transition-colors font-medium"
                   >
                     {link.label}
@@ -71,13 +67,9 @@ export default function Navbar() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            <span
-              className={`block w-6 h-0.5 bg-black transition-all ${isMenuOpen ? "rotate-45 translate-y-2" : ""}`}
-            />
+            <span className={`block w-6 h-0.5 bg-black transition-all ${isMenuOpen ? "rotate-45 translate-y-2" : ""}`} />
             <span className={`block w-6 h-0.5 bg-black transition-all ${isMenuOpen ? "opacity-0" : ""}`} />
-            <span
-              className={`block w-6 h-0.5 bg-black transition-all ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}
-            />
+            <span className={`block w-6 h-0.5 bg-black transition-all ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
           </button>
         </div>
 
@@ -96,7 +88,7 @@ export default function Navbar() {
               ].map((link, i) => (
                 <li key={i}>
                   <Link
-                    href={`${basePath}${link.href}`}
+                    href={link.href}
                     className="block text-gray-700 hover:text-black transition-colors font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
