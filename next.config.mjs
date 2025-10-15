@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // fuerza a Next a servir la imagen tal cual, sin procesarla
   },
-  basePath: '/PROYECTO-TESSITURA',
-  assetPrefix: '/PROYECTO-TESSITURA/',
+  basePath: '/Proyecto-Tessitura',
+  assetPrefix: '/Proyecto-Tessitura/',
 };
 
 export default nextConfig;
