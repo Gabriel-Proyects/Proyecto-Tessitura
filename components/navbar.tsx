@@ -8,7 +8,6 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ""
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50)
@@ -27,7 +26,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
             <Image
-              src={`${basePath}/tessitura.jpeg`}
+              src="/Proyecto-Tessitura/tessitura.jpeg"
               alt="Logo de Tessitura Arquitectos"
               width={40}
               height={40}

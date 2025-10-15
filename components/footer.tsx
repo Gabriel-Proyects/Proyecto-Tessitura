@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
           <div className="flex items-center space-x-3">
-            <Image src="/tessitura.jpeg" alt="Logo" width={48} height={48} className="rounded-lg" />
+            <Image src="/Proyecto-Tessitura/tessitura.jpeg" alt="Logo" width={48} height={48} className="rounded-lg" />
             <span className="text-xl font-bold">TESSITURA ARQUITECTOS</span>
           </div>
 
