@@ -8,11 +8,12 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/Proyecto-Tessitura"
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
     }
-
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -25,77 +26,42 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
         <div className="flex items-center justify-between gap-4 lg:gap-8">
-          <Link href="/" className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
+          {/* Logo */}
+          <Link href={`${basePath}/`} className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
             <Image
-              src="/tessitura.jpeg"
+              src={`${basePath}/tessitura.jpeg`}
               alt="Logo de Tessitura Arquitectos"
               width={40}
               height={40}
               className="rounded-lg shadow-sm sm:w-12 sm:h-12"
+              unoptimized
             />
             <span className="text-sm sm:text-base lg:text-xl font-bold text-black whitespace-nowrap">
               TESSITURA ARQUITECTOS
             </span>
           </Link>
 
+          {/* Desktop Navigation */}
           <nav className="hidden md:block ml-auto">
             <ul className="flex items-center space-x-4 lg:space-x-6 xl:space-x-8">
-              <li>
-                <Link
-                  href="/"
-                  className="text-sm lg:text-base text-gray-700 hover:text-black transition-colors font-medium"
-                >
-                  Inicio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#about-us"
-                  className="text-sm lg:text-base text-gray-700 hover:text-black transition-colors font-medium"
-                >
-                  Nosotros
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#servicios"
-                  className="text-sm lg:text-base text-gray-700 hover:text-black transition-colors font-medium"
-                >
-                  Servicios
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#proyectos"
-                  className="text-sm lg:text-base text-gray-700 hover:text-black transition-colors font-medium"
-                >
-                  Proyectos
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#contacto"
-                  className="text-sm lg:text-base text-gray-700 hover:text-black transition-colors font-medium"
-                >
-                  Contacto
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/galeria"
-                  className="text-sm lg:text-base text-gray-700 hover:text-black transition-colors font-medium"
-                >
-                  Galería
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/redes-sociales"
-                  className="text-sm lg:text-base text-gray-700 hover:text-black transition-colors font-medium"
-                >
-                  Redes
-                </Link>
-              </li>
+              {[
+                { href: "/", label: "Inicio" },
+                { href: "/#about-us", label: "Nosotros" },
+                { href: "/#servicios", label: "Servicios" },
+                { href: "/#proyectos", label: "Proyectos" },
+                { href: "/#contacto", label: "Contacto" },
+                { href: "/galeria", label: "Galería" },
+                { href: "/redes-sociales", label: "Redes" },
+              ].map((link, i) => (
+                <li key={i}>
+                  <Link
+                    href={`${basePath}${link.href}`}
+                    className="text-sm lg:text-base text-gray-700 hover:text-black transition-colors font-medium"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
 
@@ -119,69 +85,25 @@ export default function Navbar() {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4">
             <ul className="flex flex-col space-y-4">
-              <li>
-                <Link
-                  href="/"
-                  className="block text-gray-700 hover:text-black transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Inicio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#about-us"
-                  className="block text-gray-700 hover:text-black transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Nosotros
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#servicios"
-                  className="block text-gray-700 hover:text-black transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Servicios
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#proyectos"
-                  className="block text-gray-700 hover:text-black transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Proyectos
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#contacto"
-                  className="block text-gray-700 hover:text-black transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Contacto
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/galeria"
-                  className="block text-gray-700 hover:text-black transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Galería
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/redes-sociales"
-                  className="block text-gray-700 hover:text-black transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Redes
-                </Link>
-              </li>
+              {[
+                { href: "/", label: "Inicio" },
+                { href: "/#about-us", label: "Nosotros" },
+                { href: "/#servicios", label: "Servicios" },
+                { href: "/#proyectos", label: "Proyectos" },
+                { href: "/#contacto", label: "Contacto" },
+                { href: "/galeria", label: "Galería" },
+                { href: "/redes-sociales", label: "Redes" },
+              ].map((link, i) => (
+                <li key={i}>
+                  <Link
+                    href={`${basePath}${link.href}`}
+                    className="block text-gray-700 hover:text-black transition-colors font-medium"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
         )}

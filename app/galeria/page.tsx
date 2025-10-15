@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -5,6 +7,8 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import RevealOnScroll from "@/components/reveal-on-scroll"
 
 export default function GaleriaPage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/Proyecto-Tessitura"
+
   const projects = [
     {
       title: "NOIR'S PIZZA",
@@ -86,10 +90,11 @@ export default function GaleriaPage() {
                 <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
                   <div className="relative h-48 sm:h-56 md:h-64">
                     <Image
-                      src={`${project.image}`}
+                      src={`${basePath}${project.image}`}
                       alt={project.title}
                       fill
                       className="object-cover"
+                      unoptimized
                     />
                   </div>
                   <div className="p-4 sm:p-6 flex-grow flex flex-col">
