@@ -50,8 +50,8 @@ export default function Navbar() {
                 { href: "/#servicios", label: "Servicios" },
                 { href: "/#proyectos", label: "Proyectos" },
                 { href: "/#contacto", label: "Contacto" },
-                { href: "/galeria", label: "Galería" },
-                { href: "/redes-sociales", label: "Redes" },
+                { href: "/#galeria", label: "Galería" },
+                { href: "/#redes-sociales", label: "Redes" },
               ].map((link, i) => (
                 <li key={i}>
                   <Link
