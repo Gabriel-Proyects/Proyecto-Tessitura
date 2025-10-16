@@ -122,6 +122,115 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section id="servicios" className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-4 sm:mb-6">
+              Nuestros Servicios
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+              En Tessitura Arquitectos fusionamos creatividad y funcionalidad para crear espacios que inspiran y
+              perduran en el tiempo.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <RevealOnScroll>
+              <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-black rounded-full flex items-center justify-center mb-4 sm:mb-6 flex-shrink-0">
+                  <i className="fas fa-drafting-compass text-xl sm:text-2xl text-amber-400"></i>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4">Diseño Arquitectónico</h3>
+                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 flex-grow">
+                  Creamos diseños arquitectónicos innovadores que equilibran estética, funcionalidad y sostenibilidad
+                  para cada proyecto.
+                </p>
+                <ul className="space-y-2 text-sm sm:text-base text-gray-700">
+                  <li className="flex items-center">
+                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
+                    Arquitectura residencial
+                  </li>
+                  <li className="flex items-center">
+                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
+                    Edificios comerciales
+                  </li>
+                  <li className="flex items-center">
+                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
+                    Espacios culturales
+                  </li>
+                  <li className="flex items-center">
+                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
+                    Diseño de interiores
+                  </li>
+                </ul>
+              </div>
+            </RevealOnScroll>
+
+            <RevealOnScroll>
+              <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-black rounded-full flex items-center justify-center mb-4 sm:mb-6 flex-shrink-0">
+                  <i className="fas fa-city text-xl sm:text-2xl text-amber-400"></i>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4">Planificación Urbana</h3>
+                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 flex-grow">
+                  Desarrollamos soluciones urbanas que mejoran la calidad de vida y promueven comunidades sostenibles y
+                  vibrantes.
+                </p>
+                <ul className="space-y-2 text-sm sm:text-base text-gray-700">
+                  <li className="flex items-center">
+                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
+                    Masterplans
+                  </li>
+                  <li className="flex items-center">
+                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
+                    Regeneración urbana
+                  </li>
+                  <li className="flex items-center">
+                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
+                    Espacios públicos
+                  </li>
+                  <li className="flex items-center">
+                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
+                    Movilidad sostenible
+                  </li>
+                </ul>
+              </div>
+            </RevealOnScroll>
+
+            <RevealOnScroll>
+              <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-black rounded-full flex items-center justify-center mb-4 sm:mb-6 flex-shrink-0">
+                  <i className="fas fa-tools text-xl sm:text-2xl text-amber-400"></i>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4">Consultoría Técnica</h3>
+                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 flex-grow">
+                  Ofrecemos asesoramiento especializado en todos los aspectos técnicos y normativos de la arquitectura y
+                  construcción.
+                </p>
+                <ul className="space-y-2 text-sm sm:text-base text-gray-700">
+                  <li className="flex items-center">
+                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
+                    Certificaciones energéticas
+                  </li>
+                  <li className="flex items-center">
+                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
+                    Gestión de licencias
+                  </li>
+                  <li className="flex items-center">
+                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
+                    Dirección de obra
+                  </li>
+                  <li className="flex items-center">
+                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
+                    Peritajes técnicos
+                  </li>
+                </ul>
+              </div>
+            </RevealOnScroll>
+          </div>
+        </div>
+      </section>
+
       {/* Proyectos */}
       <section id="proyectos" className="py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,6 +280,136 @@ export default function HomePage() {
                 </div>
               </RevealOnScroll>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 sm:py-16 lg:py-20 bg-black text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6">
+              Lo Que Dicen Nuestros Clientes
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4">
+              La satisfacción de nuestros clientes es nuestro mayor logro
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {[
+              {
+                name: "María González",
+                project: "Casa Residencial",
+                text: "Tessitura transformó completamente nuestra visión de hogar. Su atención al detalle y profesionalismo superaron nuestras expectativas.",
+              },
+              {
+                name: "Carlos Mendoza",
+                project: "Edificio Comercial",
+                text: "El equipo de Tessitura entendió perfectamente nuestras necesidades comerciales y creó un espacio que ha potenciado nuestro negocio.",
+              },
+              {
+                name: "Ana Rodríguez",
+                project: "Proyecto Industrial",
+                text: "Su experiencia en proyectos industriales es excepcional. Cumplieron con todos los plazos y especificaciones técnicas.",
+              },
+            ].map((testimonial, index) => (
+              <RevealOnScroll key={index}>
+                <div className="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/20 flex flex-col h-full">
+                  <div className="flex items-center mb-4 sm:mb-6">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-amber-400 rounded-full flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
+                      <i className="fas fa-user text-black text-sm sm:text-base"></i>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-sm sm:text-base">{testimonial.name}</h4>
+                      <p className="text-gray-300 text-xs sm:text-sm">{testimonial.project}</p>
+                    </div>
+                  </div>
+                  <p className="text-sm sm:text-base text-gray-200 leading-relaxed mb-4 flex-grow">
+                    {testimonial.text}
+                  </p>
+                  <div className="flex text-amber-400 text-sm sm:text-base">
+                    {[...Array(5)].map((_, i) => (
+                      <i key={i} className="fas fa-star"></i>
+                    ))}
+                  </div>
+                </div>
+              </RevealOnScroll>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-4 sm:mb-6">Contacto</h2>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+              Estamos a tu disposición para convertir tus ideas en proyectos arquitectónicos excepcionales.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+            <RevealOnScroll>
+              <div className="space-y-6 sm:space-y-8">
+                <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-200">
+                  <h3 className="text-xl sm:text-2xl font-bold text-black mb-4 sm:mb-6">Oficina Principal</h3>
+                  <div className="space-y-4 sm:space-y-6">
+                    <div>
+                      <h4 className="font-bold text-black mb-2 text-sm sm:text-base">Dirección</h4>
+                      <p className="text-sm sm:text-base text-gray-700">Av Juan I. Jiménez 465, Los Ángeles</p>
+                      <p className="text-sm sm:text-base text-gray-700">27140 Torreón, Coah.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-black mb-2 text-sm sm:text-base">Teléfono</h4>
+                      <p className="text-sm sm:text-base text-gray-700">+52 87 456 78 90</p>
+                      <p className="text-sm sm:text-base text-gray-700">+52 87 45 43 65 (Móvil)</p>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-black mb-2 text-sm sm:text-base">Email</h4>
+                      <p className="text-sm sm:text-base text-gray-700">info@tessituraarchitects.com</p>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-black mb-2 text-sm sm:text-base">Horario</h4>
+                      <p className="text-sm sm:text-base text-gray-700">Lunes a Viernes: 9:00 - 19:00</p>
+                      <p className="text-sm sm:text-base text-gray-700">Sábados: Con cita previa</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-200">
+                  <h3 className="text-xl sm:text-2xl font-bold text-black mb-4 sm:mb-6">Oficina Segunda</h3>
+                  <div className="space-y-4 sm:space-y-6">
+                    <div>
+                      <h4 className="font-bold text-black mb-2 text-sm sm:text-base">Dirección</h4>
+                      <p className="text-sm sm:text-base text-gray-700">Carrer de Provença 310, Principal</p>
+                      <p className="text-sm sm:text-base text-gray-700">27080 CDMX</p>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-black mb-2 text-sm sm:text-base">Teléfono</h4>
+                      <p className="text-sm sm:text-base text-gray-700">+52 87 123 45 67</p>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-black mb-2 text-sm sm:text-base">Email</h4>
+                      <p className="text-sm sm:text-base text-gray-700">CDMX@tessituraarchitects.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </RevealOnScroll>
+
+            <RevealOnScroll>
+              <div className="h-full min-h-[400px] sm:min-h-[500px] lg:min-h-[600px] rounded-2xl overflow-hidden shadow-xl">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.866082595827!2d-103.42862322472876!3d25.53398317748886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fd9d40b1e35db%3A0x2c05f61f5cbf90a3!2sAv%20Juan%20I.%20Jim%C3%A9nez%20465%2C%20Los%20%C3%81ngeles%2C%2027140%20Torre%C3%B3n%2C%20Coah.!5e0!3m2!1ses-419!2smx!4v1715000000000!5m2!1ses-419!2smx"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </RevealOnScroll>
           </div>
         </div>
       </section>
