@@ -122,6 +122,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Servicios - Proyectos Ejecutivos */}
       <section id="servicios" className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
@@ -129,132 +130,52 @@ export default function HomePage() {
               Nuestros Servicios
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-              En Tessitura Arquitectos fusionamos creatividad y funcionalidad para crear espacios que inspiran y
-              perduran en el tiempo.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            <RevealOnScroll>
-              <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-black rounded-full flex items-center justify-center mb-4 sm:mb-6 flex-shrink-0">
-                  <i className="fas fa-drafting-compass text-xl sm:text-2xl text-amber-400"></i>
-                </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4">Diseño Arquitectónico</h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 flex-grow">
-                  Creamos diseños arquitectónicos innovadores que equilibran estética, funcionalidad y sostenibilidad
-                  para cada proyecto.
-                </p>
-                <ul className="space-y-2 text-sm sm:text-base text-gray-700">
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
-                    Arquitectura residencial
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
-                    Edificios comerciales
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
-                    Espacios culturales
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
-                    Diseño de interiores
-                  </li>
-                </ul>
-              </div>
-            </RevealOnScroll>
-
-            <RevealOnScroll>
-              <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-black rounded-full flex items-center justify-center mb-4 sm:mb-6 flex-shrink-0">
-                  <i className="fas fa-city text-xl sm:text-2xl text-amber-400"></i>
-                </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4">Planificación Urbana</h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 flex-grow">
-                  Desarrollamos soluciones urbanas que mejoran la calidad de vida y promueven comunidades sostenibles y
-                  vibrantes.
-                </p>
-                <ul className="space-y-2 text-sm sm:text-base text-gray-700">
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
-                    Masterplans
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
-                    Regeneración urbana
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
-                    Espacios públicos
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
-                    Movilidad sostenible
-                  </li>
-                </ul>
-              </div>
-            </RevealOnScroll>
-
-            <RevealOnScroll>
-              <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-black rounded-full flex items-center justify-center mb-4 sm:mb-6 flex-shrink-0">
-                  <i className="fas fa-tools text-xl sm:text-2xl text-amber-400"></i>
-                </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4">Consultoría Técnica</h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 flex-grow">
-                  Ofrecemos asesoramiento especializado en todos los aspectos técnicos y normativos de la arquitectura y
-                  construcción.
-                </p>
-                <ul className="space-y-2 text-sm sm:text-base text-gray-700">
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
-                    Certificaciones energéticas
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
-                    Gestión de licencias
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
-                    Dirección de obra
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-amber-400 mr-2 flex-shrink-0"></i>
-                    Peritajes técnicos
-                  </li>
-                </ul>
-              </div>
-            </RevealOnScroll>
-          </div>
-        </div>
-      </section>
-
-      {/* Proyectos */}
-      <section id="proyectos" className="py-16 lg:py-20 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-6xl font-bold text-black mb-6">
-              Proyectos Ejecutivos
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Ofrecemos soluciones integrales para todas las fases de tu proyecto arquitectónico.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
-              { title: "PROYECTO", items: ["Residenciales", "Comerciales", "Industriales", "Deportivos"], image: "/proyectos/proyecto.jpg" },
-              { title: "GESTORÍA Y TRAMITOLOGÍA", items: ["Director", "Responsable de Obra", "Corresponsable", "Uso de Suelo, Lic de Construcción"], image: "/proyectos/Gestoria.png" },
-              { title: "ADMINISTRACIÓN DE OBRA", description: "Nos volvemos tus ojos, cuidando tus intereses, para que todo se ejecute en tiempo y forma", image: "/proyectos/ojos.jpg" },
-              { title: "CONSTRUCCIÓN", description: "Damos valor a tus activos, edificando, brindando confianza en la ejecución", image: "/proyectos/obra.jpg" },
-              { title: "DISEÑO DE INTERIORES", items: ["Espacios residenciales", "Oficinas corporativas", "Locales comerciales", "Espacios públicos"], image: "/proyectos/interiores.png" },
-              { title: "CONSULTORÍA ESPECIALIZADA", items: ["Estudios de factibilidad", "Peritajes técnicos", "Certificaciones energéticas", "Asesoría normativa"], image: "/proyectos/consultoria.jpg" },
+              {
+                title: "PROYECTO",
+                items: ["Residenciales", "Comerciales", "Industriales", "Deportivos"],
+                image: "/servicios/proyecto.jpg",
+              },
+              {
+                title: "GESTORÍA Y TRAMITOLOGÍA",
+                items: ["Director", "Responsable de Obra", "Corresponsable", "Uso de Suelo, Lic de Construcción"],
+                image: "/servicios/Gestoria.png",
+              },
+              {
+                title: "ADMINISTRACIÓN DE OBRA",
+                description:
+                  "Nos volvemos tus ojos, cuidando tus intereses, para que todo se ejecute en tiempo y forma",
+                image: "/servicios/ojos.jpg",
+              },
+              {
+                title: "CONSTRUCCIÓN",
+                description: "Damos valor a tus activos, edificando, brindando confianza en la ejecución",
+                image: "/servicios/obra.jpg",
+              },
+              {
+                title: "DISEÑO DE INTERIORES",
+                items: ["Espacios residenciales", "Oficinas corporativas", "Locales comerciales", "Espacios públicos"],
+                image: "/servicios/interiores.png",
+              },
+              {
+                title: "CONSULTORÍA ESPECIALIZADA",
+                items: [
+                  "Estudios de factibilidad",
+                  "Peritajes técnicos",
+                  "Certificaciones energéticas",
+                  "Asesoría normativa",
+                ],
+                image: "/servicios/consultoria.jpg",
+              },
             ].map((project, index) => (
               <RevealOnScroll key={index}>
-                <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-                  <div className="relative h-48">
+                <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full border border-gray-200">
+                  <div className="relative h-40 sm:h-48">
                     <Image
                       src={`${basePath}${project.image}`}
                       alt={project.title}
@@ -262,19 +183,19 @@ export default function HomePage() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="p-6 flex-grow flex flex-col">
-                    <h3 className="text-xl font-bold text-black mb-4">{project.title}</h3>
+                  <div className="p-4 sm:p-6 flex-grow flex flex-col">
+                    <h3 className="text-lg sm:text-xl font-bold text-black mb-3 sm:mb-4">{project.title}</h3>
                     {project.items ? (
-                      <ul className="space-y-2 text-gray-700">
+                      <ul className="space-y-2 text-sm sm:text-base text-gray-700">
                         {project.items.map((item, i) => (
                           <li key={i} className="flex items-start">
-                            <i className="fas fa-check text-amber-400 mr-2 mt-1"></i>
+                            <i className="fas fa-check text-amber-400 mr-2 mt-1 flex-shrink-0"></i>
                             <span>{item}</span>
                           </li>
                         ))}
                       </ul>
                     ) : (
-                      <p className="text-gray-700">{project.description}</p>
+                      <p className="text-sm sm:text-base text-gray-700">{project.description}</p>
                     )}
                   </div>
                 </div>
@@ -284,6 +205,127 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Proyectos - Galería */}
+      <section id="proyectos" className="py-12 sm:py-16 lg:py-20 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-4 sm:mb-6">
+              Nuestros Proyectos
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+              Descubre nuestros trabajos más destacados donde la creatividad y la funcionalidad se encuentran.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+            {[
+              {
+                title: "ALKIMIA",
+                description:
+                  "Proyecto residencial que fusiona eficiencia estructural con bienestar. Diseño modular en acero que optimiza un terreno reducido con departamentos monoambiente que maximizan luz y ventilación natural cruzada. Incluye rooftop comunitario para fomentar interacción entre residentes.",
+                location: "Torreón, Coahuila, México",
+                area: "274.10 m²",
+                year: "Proyecto ejecutivo",
+                image: "/proyectos/alkimia.jpg",
+              },
+              {
+                title: "CASA ÁRBOLES GEMELOS",
+                description:
+                  "Intervención a residencia existente organizada en tres franjas: casa, jardín central y departamento. Los dos árboles gemelos preexistentes articulan visualmente ambos cuerpos, convirtiéndose en el núcleo verde y simbólico del conjunto.",
+                location: "Torreón, Coahuila, México",
+                area: "462.25 m²",
+                year: "Proyecto ejecutivo",
+                image: "/proyectos/arboles-gemelos.jpg",
+              },
+              {
+                title: "TERRAZA CERVANTES",
+                description:
+                  "Transformación de patio desordenado en terraza dinámica y organizada. Reorganización de vegetación existente con juego de muros a diferentes alturas e iluminación estratégica que crea ambiente visualmente amplio y acogedor.",
+                location: "Torreón, Coah. México",
+                area: "30 m²",
+                year: "Proyecto ejecutivo-Construcción",
+                image: "/proyectos/terraza-cervantes.jpg",
+              },
+              {
+                title: "CASA HIDALGO",
+                description:
+                  "Transformación de área vacía en atractiva terraza con servicio de cocina, destinada a huéspedes y público general. Diseño estratégico que responde a la demanda de espacio de descanso y relajación confortable y visualmente agradable.",
+                location: "Torreón, Coah. México",
+                area: "183 m²",
+                year: "Proyecto ejecutivo-Construcción",
+                image: "/proyectos/casa-hidalgo.jpg",
+              },
+              {
+                title: "TERRAZA VIÑEDOS",
+                description:
+                  "Transformación de espacio exterior en sofisticada terraza residencial diseñada para convivencia, con áreas de bar y estar con fogata bajo cubierta versátil. Combinación de materiales contemporáneos, paisajismo minimalista e iluminación que crean un oasis estético, acogedor y funcional.",
+                location: "Torreón, Coah. México",
+                area: "Superficie por definir",
+                year: "Proyecto ejecutivo-Construcción",
+                image: "/proyectos/terraza-vinedos.jpg",
+              },
+              {
+                title: "PLAZA TOCHMATZINTLA",
+                description:
+                  "Transformación de terreno irregular en vibrante plaza urbana multifuncional. Diseño articulado por quiosco central, áreas deportivas y recreativas que responde a necesidades comunitarias. Impacto visual sublime logrado con paleta verde de especies endémicas y rediseño integral.",
+                location: "Tochmatzintla, Puebla, México",
+                area: "5,590 m²",
+                year: "Proyecto ejecutivo",
+                image: "/proyectos/plaza-tochmatzintla.jpeg",
+              },
+            ].map((project, index) => (
+              <RevealOnScroll key={index}>
+                <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                  <div className="relative h-48 sm:h-56 md:h-64">
+                    <Image
+                      src={`${basePath}${project.image}`}
+                      alt={project.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="p-4 sm:p-6 flex-grow flex flex-col">
+                    <h3 className="text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4">{project.title}</h3>
+                    <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed flex-grow">
+                      {project.description}
+                    </p>
+                    <div className="space-y-2 text-sm sm:text-base text-gray-600">
+                      <p className="flex items-start">
+                        <i className="fas fa-map-marker-alt text-amber-400 mr-2 mt-1 flex-shrink-0"></i>
+                        <span>{project.location}</span>
+                      </p>
+                      <p className="flex items-center">
+                        <i className="fas fa-ruler-combined text-amber-400 mr-2 flex-shrink-0"></i>
+                        Área: {project.area}
+                      </p>
+                      <p className="flex items-center">
+                        <i className="fas fa-calendar-alt text-amber-400 mr-2 flex-shrink-0"></i>
+                        Estatus: {project.year}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </RevealOnScroll>
+            ))}
+          </div>
+
+          {/* Botón para ver más proyectos */}
+          <RevealOnScroll>
+            <div className="text-center">
+              <Link
+                href="/galeria"
+                className="inline-flex items-center px-8 py-4 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-all duration-300 text-lg shadow-lg hover:shadow-xl"
+              >
+                <span>¿Quieres ver más proyectos?</span>
+                <i className="fas fa-arrow-right ml-3"></i>
+              </Link>
+            </div>
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* Testimonios */}
       <section className="py-12 sm:py-16 lg:py-20 bg-black text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
@@ -339,6 +381,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Contacto */}
       <section id="contacto" className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
